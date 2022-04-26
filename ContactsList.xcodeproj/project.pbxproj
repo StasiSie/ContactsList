@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		FED5FEA0281867120073C991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FE9F281867120073C991 /* AppDelegate.swift */; };
 		FED5FEA2281867120073C991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEA1281867120073C991 /* SceneDelegate.swift */; };
-		FED5FEA4281867120073C991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEA3281867120073C991 /* ViewController.swift */; };
 		FED5FEA7281867120073C991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED5FEA5281867120073C991 /* Main.storyboard */; };
 		FED5FEA9281867130073C991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED5FEA8281867130073C991 /* Assets.xcassets */; };
 		FED5FEAC281867130073C991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED5FEAA281867130073C991 /* LaunchScreen.storyboard */; };
+		FED5FEB4281869AA0073C991 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEB3281869AA0073C991 /* Models.swift */; };
+		FED5FEBB281871ED0073C991 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEBA281871ED0073C991 /* ContactsListViewController.swift */; };
+		FED5FEBD281877BC0073C991 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEBC281877BC0073C991 /* ContactInfoViewController.swift */; };
+		FED5FEBF28187BC40073C991 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEBE28187BC40073C991 /* ContactsTableViewController.swift */; };
+		FED5FEC128187F040073C991 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5FEC028187F040073C991 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FED5FE9C281867120073C991 /* ContactsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED5FE9F281867120073C991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FED5FEA1281867120073C991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FED5FEA3281867120073C991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FED5FEA6281867120073C991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FED5FEA8281867130073C991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FED5FEAB281867130073C991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED5FEAD281867130073C991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED5FEB3281869AA0073C991 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FED5FEBA281871ED0073C991 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		FED5FEBC281877BC0073C991 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		FED5FEBE28187BC40073C991 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		FED5FEC028187F040073C991 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		FED5FE9E281867120073C991 /* ContactsList */ = {
 			isa = PBXGroup;
 			children = (
-				FED5FE9F281867120073C991 /* AppDelegate.swift */,
-				FED5FEA1281867120073C991 /* SceneDelegate.swift */,
-				FED5FEA3281867120073C991 /* ViewController.swift */,
-				FED5FEA5281867120073C991 /* Main.storyboard */,
-				FED5FEA8281867130073C991 /* Assets.xcassets */,
-				FED5FEAA281867130073C991 /* LaunchScreen.storyboard */,
+				FED5FEB92818719F0073C991 /* ViewControllers */,
+				FED5FEB5281871680073C991 /* Models */,
+				FED5FEB82818718E0073C991 /* App */,
+				FED5FEB6281871760073C991 /* Storyboards */,
+				FED5FEB7281871810073C991 /* Assets */,
 				FED5FEAD281867130073C991 /* Info.plist */,
 			);
 			path = ContactsList;
+			sourceTree = "<group>";
+		};
+		FED5FEB5281871680073C991 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FED5FEB3281869AA0073C991 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FED5FEB6281871760073C991 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FED5FEA5281867120073C991 /* Main.storyboard */,
+				FED5FEAA281867130073C991 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FED5FEB7281871810073C991 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FED5FEA8281867130073C991 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FED5FEB82818718E0073C991 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FED5FE9F281867120073C991 /* AppDelegate.swift */,
+				FED5FEA1281867120073C991 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FED5FEB92818719F0073C991 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FED5FEBA281871ED0073C991 /* ContactsListViewController.swift */,
+				FED5FEBC281877BC0073C991 /* ContactInfoViewController.swift */,
+				FED5FEBE28187BC40073C991 /* ContactsTableViewController.swift */,
+				FED5FEC028187F040073C991 /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED5FEA4281867120073C991 /* ViewController.swift in Sources */,
+				FED5FEB4281869AA0073C991 /* Models.swift in Sources */,
 				FED5FEA0281867120073C991 /* AppDelegate.swift in Sources */,
+				FED5FEBF28187BC40073C991 /* ContactsTableViewController.swift in Sources */,
+				FED5FEBB281871ED0073C991 /* ContactsListViewController.swift in Sources */,
+				FED5FEC128187F040073C991 /* TabBarViewController.swift in Sources */,
+				FED5FEBD281877BC0073C991 /* ContactInfoViewController.swift in Sources */,
 				FED5FEA2281867120073C991 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
